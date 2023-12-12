@@ -1,0 +1,1519 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>PUMA.COM</title>
+        <!-- <link rel="stylesheet" href="style.css"> -->
+        
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet"
+            href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+        <link rel="stylesheet" href="/resources/demos/style.css">
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+        <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+        <script src="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+        "></script>
+        <link href="
+        https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+        " rel="stylesheet">
+
+
+    </head>
+    <style>
+        body{
+  margin: 0%;
+  padding: 0%;
+}
+nav{
+  position: sticky;
+  top: 0%;
+  z-index: 100;
+  background-color: black;
+  color: white;
+  width: 100%;
+  height: 90px;
+}
+#n{
+  text-decoration: none;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#nd1{
+  width: 10%
+}
+#logo{
+  list-style-type: none;
+  margin-top: 5%;
+  margin-left: 75%;
+}
+#nu1{
+  font-size: 20px;
+  margin-top: 2%;
+  cursor: pointer;
+  width: 50%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+#d{
+  display: flex;
+  width: 100%;
+}
+#in{
+  background-color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color: aliceblue;
+  border-color: aliceblue;
+  font-size: 20px;
+  margin-top: -2%;
+  width: 50%;
+  height: 40px;
+  
+}
+#nu2{
+  margin-top: 2%;
+  width: 30%;  
+  font-size: 20px; 
+}
+
+#nd2{
+  margin-left: 25%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20%;
+}
+#nd{
+  margin-top: 2%;
+  margin-left: 10%;
+  
+}
+#newcon{
+  list-style-type: none;
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+#div2{
+  display: none;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+}
+#div3{
+  display: none;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+}
+#div4{
+  display: none;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+}
+
+#newcon li{
+  margin-top: 5%;
+}
+#newcon li:hover{
+  color: rgb(138,115,80);
+  cursor: pointer;
+}
+.black li{
+  color: rgb(130, 128, 128);
+}
+.black strong li{
+  color: black;
+}
+#hr ,#hr1 ,#hr2 ,#hr3 ,#hr4 ,#hr5 ,#hr6 ,#hr7 ,#hr8{
+  position: absolute;
+  
+ display: none; 
+}
+#td{
+  background-color:rgb(9,36,68);
+  margin-top: -1%;
+  text-align: center;
+  width: 100%;
+  color: white;
+  height: 100px;
+}
+#td #p1{
+  padding-top: 2%;
+  font-size: 15px;
+}
+#bat{
+  position: absolute;
+  top: 40%;
+  right: 1%;
+  color: white;
+}
+#t1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+#bat #t2{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#bat #t3{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#bat1{
+  margin-top: -20%;
+  font-size: 30px;
+  margin-left: 2%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color: black;
+  position: absolute;
+}
+.box {
+  width: 100px;
+  height: auto;
+  float: left;
+  transition: .5s linear;
+  position: relative;
+  display: block;
+  overflow: hidden;
+  padding: 15px;
+  text-align: center;
+  margin: 0 5px;
+  background: transparent;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.box:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 100%;
+  border-bottom: 4px solid transparent;
+  border-left: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(100%);
+}
+.box:after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  border-top: 4px solid transparent;
+  border-right: 4px solid transparent;
+  box-sizing: border-box;
+  transform: translateX(-100%);
+}
+.box:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+.box:hover:before {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .3s;
+}
+.box:hover:after {
+  border-color: #262626;
+  height: 100%;
+  transform: translateX(0);
+  transition: .3s transform linear, .3s height linear .5s;
+}
+button {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+}
+.button1 {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button1::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button1:hover::before {
+  scale: 3;
+}
+
+.button1:hover {
+  color: #000000;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button1:active {
+  scale: 1;
+}
+
+.button2 {
+  cursor: pointer;
+  margin-left: 3%;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 0px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button2::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button2:hover::before {
+  scale: 3;
+}
+
+.button2:hover {
+  color: #000000;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+
+.button2:active {
+  scale: 1;
+}
+.cc{
+  width: 100%;
+  left: -2.5%;
+  height: 100vh;
+  background-color: whitesmoke;
+  position: relative;
+}
+ul{
+  list-style-type: none;
+}
+.silder{
+  width: 100%;
+  height: 100vh;
+  left: 0%;
+  position: relative;
+  display: flex;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.silder .slide{
+  width: 20%;
+  height: 100%;
+  position: relative;
+  text-align: center;
+  transition: 0.5s;
+}
+.silder .slide:nth-child(1){
+  background: url("img/c1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.silder .slide:nth-child(2){
+  background: url("img/c2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.silder .slide:nth-child(3){
+  background: url("img/c3.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.silder .slide:nth-child(4){
+  background: url("img/c4.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.silder .slide:nth-child(5){
+  background: url("img/c5.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+}
+.silder .slide:hover{
+  width: 60%;
+  cursor: pointer;
+}
+#c1t{
+  position: absolute;
+  top: 100px;
+  color: white;
+  margin-left: 30%;
+  margin-top: 20%;
+  display: none;
+  padding: 10px;
+  border-radius: 5px 5px;
+  background-color: #9895952f;
+
+}
+#c1t1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+#c2t{
+  position: absolute;
+  /* top: 100px; */
+  color: rgb(255, 255, 255);
+  margin-left: 35%;
+  margin-top: 35%;
+  display: none;
+  padding: 10px 30px;
+  border-radius: 5px 5px;
+  background-color: #98959556;
+}
+#c3t{
+  position: absolute;
+  /* top: 100px; */
+  color: rgb(0, 0, 0);
+  margin-left: 30%;
+  margin-top: 30%;
+  display: none;
+  padding: 10px 30px;
+  border-radius: 5px 5px;
+  background-color: #9895953d;
+}
+#c4t{
+  position: absolute;
+  /* top: 100px; */
+  color: rgb(0, 0, 0);
+  margin-left: 35%;
+  margin-top: 25%;
+  display: none;
+}
+#c5t{
+  position: absolute;
+  /* top: 100px; */
+  color: rgb(63, 63, 63);
+  margin-left: 35%;
+  margin-top: 25%;
+  display: none;
+}
+#c2t1{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+
+.button3 {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 24px;
+  font-size: 18px;
+  color: rgb(0, 0, 0);
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 0px;
+  background-color: transparent;
+  font-weight: 600;
+  transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  overflow: hidden;
+}
+
+.button3::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 50px;
+  height: 50px;
+  border-radius: inherit;
+  scale: 0;
+  z-index: -1;
+  background-color: rgb(3, 3, 3);
+  transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+
+.button3:hover::before {
+  scale: 3;
+}
+
+.button3:hover {
+  color: #ffffff;
+  scale: 1.1;
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+.button3:active {
+  scale: 1;
+}
+
+#cc1{
+  display: flex;
+  width: 100%;
+
+}
+#cd1{
+  width: 50%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 40px;
+}
+#cd2{
+  width: 50%;
+}
+#pp{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 40%;
+  font-style: initial;
+}
+#p3{
+  font-size: 20px;
+  text-align: center;
+}
+
+.button4 {
+  padding: 0.8em 1.8em;
+  border: 2px solid #000000;
+  margin-left: 42%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 16px;
+  transition: .3s;
+  z-index: 1;
+  font-family: inherit;
+  color: #000000;
+ }
+ 
+ .button4::before {
+  content: '';
+  width: 0;
+  height: 300%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background: #000000;
+  transition: .5s ease;
+  display: block;
+  z-index: -1;
+ }
+ 
+ .button4:hover::before {
+  width: 105%;
+ }
+ 
+ .button4:hover {
+  color: #ffffff;
+ }
+ .splide__slide img {
+  width: 100%;
+  height: auto;
+}
+#card-section{
+  
+  display: flex;
+  overflow-x: scroll;
+  overflow: hidden;
+  
+
+}
+#card1{
+  width: 500px;
+  border: solid 2px;
+  height: 400px;
+  background-color: #efeeee;
+  
+}
+#cardd1{
+  width: 0%;
+  
+  text-align: center;
+}
+
+#card1d2{
+  margin-top: -25%;
+  text-align: center;
+  
+  /* display: none; */
+}
+#card1d2 #d2{
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2%;
+}
+#card1d2 #d22{
+  margin-left: 0%;
+}
+#d22 #p1{
+  color: red;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.splide__slide img {
+
+  width: 100%;
+  height: auto;
+  
+}
+.splide__slide{
+  /* margin-top: 10%; */
+  border-color: #262626 2px solid;
+  width: 100%;
+}
+#text h1{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 30px;
+}
+#text h5{
+  text-align: center;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif ;
+  font-size: 13px;
+  color: #989595;
+  font-style: inherit;
+  letter-spacing: 9px;
+}
+#circle-section{
+  display: flex;
+  margin-left: 25%;
+  
+}
+#circle-section img{
+  border-radius: 50%;
+  opacity: 0.5;
+  transform: scalex(-1);
+  border: rgb(0, 0, 0) 5px solid;
+}
+#circle-section img:hover{
+  opacity: 1;
+  border: rgb(255, 157, 0) solid 5px;
+  transform: scalex(1);
+}
+#photo{
+  background-color: #9895952a;
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 10%;
+  
+  /* border: #000000 2px solid; */
+  display: flex;
+  height: 1000px;
+  
+}
+#photo1{
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  position: absolute;
+  margin-left: 10%;
+}
+.photo11{
+  margin-top: 2%;
+  /* border: #000000 1px solid; */
+  height: 400px;
+  width: 30%;
+  border-radius: 20px 20px;
+}
+#orange{
+  width: 25%;
+  background-color: orange;
+  border-radius: 20px 20px;
+}
+#photo2{
+  display: flex;
+  width: 75%;
+  justify-content: space-around;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 10%;
+}
+.photo11 {
+  --_g: 10% /45% 45% no-repeat linear-gradient(#000 0 0);
+  --m:
+    left   var(--_i,0%) top    var(--_g),
+    bottom var(--_i,0%) left   var(--_g),
+    top    var(--_i,0%) right  var(--_g),
+    right  var(--_i,0%) bottom var(--_g);
+  -webkit-mask: var(--m);
+          mask: var(--m);
+  filter: grayscale();
+  transition: .3s linear;
+  cursor: pointer;
+}
+.photo11:hover {
+  --_i: 10%;
+  filter: grayscale(0);
+}
+#footer{
+  /* margin-top: 1%; */
+  background-color: #000000;
+  width: 100%;
+  height: 550px;
+  color: #ffffff;
+  
+  
+  
+}
+#f1{
+  display: flex;
+  width: 100%;
+}
+#f1 ul{
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#f1 ul li{
+  font-size: 20px;
+  color: #989595;
+  margin-top: 5%;
+}
+#f1 ul li:hover{
+  color: #ffffff;
+}
+#stay{
+  margin-top: 5%;
+  width: 20%;
+}
+#stay ul{
+  display: flex;
+}
+.last{
+  /* border: white 1px solid; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#last1{
+  /* border: #ffffff solid 1px; */
+  display: flex;
+  width: 30%;
+  height: 30px;
+  margin-left: 10%;
+}
+#last1 img{
+  background-color: white;
+  width: 11%;
+  margin-left: 2%;
+}
+#last2{
+  border: #ffffff solid 2px;
+  width: 10%;
+  display: flex;
+  margin-left: -20%;
+  
+}
+#last2 img{
+  margin-left: 5%;
+}
+#last2 p{
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#last3{
+  margin-left: -10%;
+  font-size: 10px;
+  margin-right: 10%;
+}
+
+
+        
+</style>
+    <body>
+        <!-- nav start  -->
+        <nav id="nav1">
+            <div>
+                <div id="d">
+                    <div id="nd1">
+                       <li id="logo"><img width="70px" height="70px"  src="img/10002-removebg-preview (2).png" alt="" width="10%"></li>
+                   </div>
+                    <ul id="nu1">
+                       <div id="new">
+                        <div ><a id="n" href="new.html"><li>New</li></a>
+                        <hr id="hr" width="2%" color="#8A7350" >
+                        </div>
+                        <br>
+                        <div ><div id="div2">
+                            <div id="nd">
+                                <strong>
+                                    <ul id="newcon">
+                                        <li>Lanuch Calender</li>
+                                        <li>Terrace</li>
+                                        <li>#PUMADrive</li>
+                                        <li>The Never Worn</li>
+                                        <li>PUMAxRIPNDIP</li>
+                                        <li>PUMAxRHUIGI</li>
+                                        <li>Anushka's Favorite Fits</li>
+                                        <li>PUMAxTHE SMURFS</li>
+                                        <li>Mancity 23/24 Kit</li>
+                                        <li>Nitra Collection</li>
+                                        <li>PUMA 75 YEARS</li>
+                                    </ul>
+                                </strong>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li >SHOP BY GENDER</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>Men</li>
+                                    <li>Women</li>
+                                    <li>Kids&Teens</li>
+                                 </ul>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li>CLASSICS</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>Shoes</li>
+                                    <li>Clothing</li>
+                                    <li>Accessories</li>
+                                </ul>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li>SNEAKER STORE</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>RS</li>
+                                    <li>Cali</li>
+                                    <li>MAyze</li>
+                                    <li>Rider</li>
+                                    <li>Slipstream</li>
+                                    <li>Suede</li>
+                                    <li>Palermo</li>
+                                    <li>Clyde</li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                       </div>
+                       <div id="wom">
+                        <div><li >Women</li>
+                            <hr id="hr1" width="3.5%" color="#8A7350" >
+                        </div>
+                        <br>
+                        <div>
+                            <div id="div3">
+                                <div id="nd">
+                                    <strong>
+                                        <ul id="newcon">
+                                            <li style="color: red;">Sale</li>
+                                            <li>New & Trending</li>
+                                            <li>#PUMADrive</li>
+                                            <li>Softride</li>
+                                            <li>Terrace</li>
+                                            <li>Anushka's</li>
+                                            <li>Favorite Fits</li>
+                                            <li>Nitro Running</li>
+                                            <li>Curated by shanaya</li>
+                                            <li>Sports Bars</li>
+                                            <li>Maternity Clothing</li>
+                                            <li>Sustainable Collection</li>
+                                        </ul>
+                                    </strong>
+                                </div>
+                                <div id="nd">
+                                    <ul class="black" id="newcon">
+                                        <strong><li >SHOES</li></strong>
+                                        <hr style="text-underline-position: auto;">
+                                        <li>Sneakers</li>
+                                        <li>Running</li>
+                                        <li>Walking</li>
+                                        <li>Training & Gym</li>
+                                        <li>Slip-ons & Ballerinas</li>
+                                        <li>Motorsport</li>
+                                        <li>Badminton</li>
+                                        <li>Softride</li>
+                                        <li>Nitro</li>
+                                     </ul>
+                                </div>
+                                <div id="nd">
+                                    <ul class="black" id="newcon">
+                                        <strong><li>Clothing</li></strong>
+                                        <hr style="text-underline-position: auto;">
+                                        <li>T-shirts & Tops</li>
+                                        <li>Polos</li>
+                                        <li>Sports Bars</li>
+                                        <li>JAckets</li>
+                                        <li>Sweatshirts & Hoodies</li>
+                                        <li>Shorts</li>
+                                        <li>Tights & Leggings</li>
+                                        <li>Pants</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <div id="men">
+                        <div><li >Men</li>
+                            <hr id="hr2" width="2%" color="#8A7350" >
+                        </div>
+                        <br>
+                        <div>
+                            <div id="div4">
+                                <div id="nd">
+                                    <strong>
+                                        <ul id="newcon">
+                                            <li style="color: red;">Sale</li>
+                                            <li>New & Trending</li>
+                                            <li>#PUMADrive</li>
+                                            <li>Terrace</li>
+                                            <li>Nitro Running</li>
+                                            <li>Motorsport</li>
+                                            <li>Softride</li>
+                                            <li>Sustainable Collection</li>
+                                        </ul>
+                                    </strong>
+                                </div>
+                                <div id="nd">
+                                    <ul class="black" id="newcon">
+                                        <strong><li >SHOES</li></strong>
+                                        <hr style="text-underline-position: auto;">
+                                        <li>Sneakers</li>
+                                        <li>Running</li>
+                                        <li>Walking</li>
+                                        <li>Training & Gym</li>
+                                        <li>Slip-ons & Ballerinas</li>
+                                        <li>Motorsport</li>
+                                        <li>Badminton</li>
+                                        <li>Softride</li>
+                                        <li>Nitro</li>
+                                     </ul>
+                                </div>
+                                <div id="nd">
+                                    <ul class="black" id="newcon">
+                                        <strong><li>Clothing</li></strong>
+                                        <hr style="text-underline-position: auto;">
+                                        <li>T-shirts & Tops</li>
+                                        <li>Polos</li>
+                                        <li>Sports Bars</li>
+                                        <li>JAckets</li>
+                                        <li>Sweatshirts & Hoodies</li>
+                                        <li>Shorts</li>
+                                        <li>Tights & Leggings</li>
+                                        <li>Pants</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                       </div>
+                       <li id="kid">Kids
+                        <hr id="hr3" width="2%" color="#8A7350" >
+                       </li>
+                       <li id="fen">FENTYxPUMA
+                        <hr id="hr4" width="7%" color="#8A7350" >
+                       </li>
+                       <li id="moto">Motorsport
+                        <hr id="hr5" width="6%" color="#8A7350" >
+                       </li>
+                       <li id="col">Collaborations
+                        <hr id="hr6" width="7.5%" color="#8A7350" >
+                       </li>
+                       <li id="spo">Sports
+                        <hr id="hr7" width="3.5%" color="#8A7350" >
+                       </li>
+                       <li id="out">Outlet
+                        <hr id="hr8" width="3%" color="#8A7350" >
+                       </li>
+                   </ul>
+                   <ul id="nu2" >
+                       <div id="nd2">
+                           <input id="in"  type="text" placeholder="  Search.." name="search">
+                           <li><i class="fa fa-/heart-o" aria-hidden="true"></i></li>
+                           <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                           <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                       </div>
+                   </ul>
+               </div>
+               
+            </div>
+            
+            
+            
+        </nav>
+
+        <section id="td">
+                <p id="p1">EXTRA 15% OFF ON ORDERS ABOVE ₹3499</p>
+                <p>Discount auto-applied at checkout</p>
+        </section>
+
+        <section>
+            <div>
+                <img src="img/10002.gif" alt="" width="100%">
+            </div>
+            <div id="txt"></div>
+            <div id="bat">
+                <strong><p id="t1">CAN'T WAIT FOR <br> BLACK FRIDAY?</p></strong>
+                <strong><p id="t2">SHOP NOW AT EXTRA 30% OFF</p></strong>
+                <p id="t3">ON SELECT STYLES
+                    Discount auto-applied at checkout</p>
+                <button class="button1">
+                        FOR HIM
+                </button>
+                
+                <button class="button2">
+                    FOR HER
+            </button>
+            </div>
+            
+        </section>
+
+        <section>
+            <div>
+                <img src="img/banner.jpg" alt="" width="100%">
+            </div>
+            <div id="bat1">
+                <strong>
+                    <p>NEW & TRENDING</p>
+                    <p>LEVEL UP YOUR STYLE GAME</p>
+                    <div>
+                        <button>
+                            <span class="box">
+                                MEN!
+                            </span>
+                        </button>
+                        <button>
+                            <span class="box">
+                                WOMEN!
+                            </span>
+                        </button>
+                        <button>
+                            <span class="box">
+                                KIDS!
+                            </span>
+                        </button>
+                    </div>
+                </strong>
+            </div>
+
+        </section>
+
+        <section>
+            <div id="text">
+                <h1>TRENDING CATEGORIES</h1>
+                <h5>EXTRA 30% OFF ON EVERYTHING</h5>
+            </div>
+        </section>
+        <section id="circle-section">
+            <div ><img src="img/sneakers.jpeg" alt="" width="60%"></div>
+            <div ><img src="img/running.jpeg" alt="" width="60%"></div>
+            <div ><img src="img/winter.jpeg" alt="" width="60%"></div>
+            <div ><img src="img/sports.jpeg" alt="" width="60%"></div>
+            <div ><img src="img/tshirts.jpeg" alt="" width="60%"></div>
+        </section>
+
+        <section class="cc">
+            <ul class="silder">
+                <div id="c1" class="slide">
+                    <div id="c1t">
+                        <p id="c1t1">MAKE STATEMENTS</p>
+                        <p id="c1t2">BREAK RECORDS</p>
+                        <p id="c1t3">Collection Worn by Virat Kohli</p>
+                        <button class="button1">
+                            SHOH NOW
+                    </button>
+                    </div>
+                </div>
+                <div id="c2" class="slide">
+                    <div id="c2t">
+                        <p id="c2t1">PALERMO</p>
+                        <p id="c2t2">RETURN OF A CLASSIC</p>
+                        <p id="c2t3">Worn by Dua Lipa</p>
+                        <button class="button1">
+                            SHOH NOW
+                    </button>
+                    
+                    </div>
+                </div>
+                
+                <div id="c3" class="slide">
+                    <div id="c3t">
+                        <p id="c2t1">JOSHUA VIDES FOR
+                           <br>  SCUDERIA FERRARI</p>
+                        
+                        <p id="c2t3">BACK TO LAS VEGAS</p>
+                        <button class="button3">
+                            SHOH NOW
+                    </button>
+                    </div>
+                </div>
+                <div id="c4" class="slide">
+                    <div id="c4t">
+                        <p id="c2t1">PUMA x RHUIGI</p>
+                        <p id="c2t2">NEW YORK WORLDWIDE
+                        </p>
+                        
+                        <button class="button3">
+                            SHOH NOW
+                    </button>
+                    </div>
+                </div>
+                <div id="c5" class="slide">
+                    <div id="c5t">
+                        <p id="c2t1">PUMA x PLEASURES</p>
+                        <p id="c2t2">SATISFACTION GUARANTEED</p>
+                        <button class="button3">
+                            SHOH NOW
+                    </button>
+                    </div>
+                </div>
+            </ul>
+        </section>
+
+        <section id="cc1">
+            <div id="cd1">
+                <p id="pp">
+                    POWER UP YOUR PERFORMANCE..
+                </p>
+                <p id="p3">ALL-NEW CRICKET COLLECTION</p>
+                <button class="button4">
+                    SHOW NOW
+                  </button>
+            </div>
+            <div id="cd2">
+                <img id="ci" src="" alt=""  width="100%">
+            </div>
+        </section>
+
+        <section>
+            <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide">
+                              <img src="img/sho1.png" width="50%" height="100px" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>Smashic Unisex Sneakers</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹2,699</p>
+                                    <s>₹4,499</s>
+                                </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                              <img src="img/sho2.png" alt="">
+                              <div id="card1d2">
+                                <div id="d2">
+                                    <p>Mercedes-AMG PETRONAS Maco SL 2.0 <br> Unisex Driving Shoes</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹4,099</p>
+                                    <s>₹7,499</s>
+                                </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                              <img src="img/sho3.png" alt="">
+                              <div id="card1d2">
+                                <div id="d2">
+                                    <p>LQDCELL Method Men's Training <br> Shoes</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹4,699</p>
+                                    <s>₹6,499</s>
+                                </div>
+                            </div>
+                          </li>
+                          <li class="splide__slide">
+                            <img src="img/sho4.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>PUMA Smash V2 Buck Unisex <br> Sneakers</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹5,699</p>
+                                    <s>₹7,499</s>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/sho5.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>Ralph Sampson Lo Unisex Sneakers</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹4,699</p>
+                                    <s>₹6,499</s>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/sho6.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>HYBRID Fuego Men's Running <br> Shoes</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹3,749</p>
+                                    <s>₹7,499</s>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/sho7.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p></p>PUMA x one8 Shuffle Better <br> V3 Men's Sneakers</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹10,099</p>
+                                    <s>₹12,499</s>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/sho8.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>Serve Pro Lite Men's Sneakers</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹4,699</p>
+                                    <s>₹6,499</s>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/sho9.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>BMW M Motorsport Kart Cat Mid <br> Men's Driving Shoes</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹6,049</p>
+                                    <s>₹10,499</s>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="splide__slide">
+                            <img src="img/sho10.png" alt="">
+                            <div id="card1d2">
+                                <div id="d2">
+                                    <p>Ferrari Kart Cat Mid Men's Sneakers</p>
+                                </div>
+                                <div id="d22">
+                                    <p id="p1">₹4,868</p>
+                                    <s>₹6,499</s>
+                                </div>
+                            </div>
+                        </li>
+                      </ul>
+                </div>
+              </section>
+        </section>
+
+        <section id="photo">
+            <div id="orange" ></div>
+            <div id="photo1">
+                <img class="photo11" src="img/shoes1.jpg" alt="">
+                <img class="photo11" src="img/shoes2.jpg" alt="">
+                <img class="photo11" src="img/shoes3.jpg" alt="">
+            </div>
+            <div id="photo2">
+                <img class="photo11" src="img/shoes4.jpg" alt="">
+                <img class="photo11" src="img/shoes5.jpg" alt="">
+                <img class="photo11" src="img/shoes6.jpeg" alt="">
+            </div>
+        </section>
+        <section id="footer">
+            <div id="f1">
+                <ul>SUPPORT
+                    <li>Contact us</li>
+                    <li>Promotions & Sale</li>
+                    <li>Track Order</li>
+                    <li>Privacy Policy</li>
+                    <li>Terms & Conditions</li>
+                    <li>Cookie Settings</li>
+                </ul>
+                <ul>FAQs
+                    <li>My Account</li>
+                    <li>Return Policy</li>
+                    <li>Tech Glossary</li>
+                    <li>Initiate Return</li>
+                </ul>
+                <ul>ABOUT
+                    <li>Company</li>
+                    <li>Corporate News</li>
+                    <li>Press Center</li>
+                    <li>Investors</li>
+                    <li>Sustainability</li>
+                    <li>Careers</li>
+                    <li>Store Finder</li>
+                    <li>PUMA DNA</li>
+                </ul>
+            
+            <div id="stay">
+                <ul>STAY UP TO DATE</ul>
+                <ul>
+                    
+                        <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                    
+                    
+                </ul>
+            </div>
+        </div>
+
+        <hr size="2" width="80%" color="#989595">
+        <div class="last">
+            <div id="last1">
+                <img src="img/upi1.svg" alt="">
+                <img src="img/upi2.svg" alt="">
+                <img src="img/upi3.svg" alt="">
+                <img src="img/upi4.svg" alt="">
+            </div>
+            <div id="last2">
+                <img src="img/flag.svg" width="20%" alt="">
+                <p>INDIA</p>
+            </div>
+            <div id="last3">
+                <p>© PUMA INDIA LTD, 2023. ALL RIGHTS RESERVED. <br>
+                    IMPRINT AND LEGAL DATA</p>
+            </div>
+        </div>
+        </section>
+       
+        
+
+
+        
+<script>
+    var splide = new Splide( '.splide', {
+  type   : 'loop',
+  perPage: 3,
+  perMove: 1,
+} );
+
+splide.mount();
+</script>
+
+        
+<script>
+    var img11=document.getElementById("ci")
+arr11=["img/cc1.jpg","img/cc2.jpg",]
+z11=0
+img11.src=arr11[z11]
+function atp2(){
+        z11+=1
+         if(z11>arr11.length-1){
+            z11 = 0
+        }
+        img11.src = arr11[z11]
+        
+    }
+setInterval(atp2,3000)
+
+</script>
+
+        
+<script>
+    $(document).ready(function(){
+    var display =  $("#msform").css("display");
+        if(display!="none")
+        {
+            $("#div4").attr("style", "display:none");
+        }
+    var display =  $("#msform").css("display");
+        if(display!="none")
+        {
+            $("#div3").attr("style", "display:none");
+        }
+    var display =  $("#msform").css("display");
+        if(display!="none")
+        {
+            $("#div2").attr("style", "display:none");
+        }
+    });
+
+    
+
+    $(function(){
+        $("#new").mouseover(function(){
+            $("#hr").show()
+        })
+        $("#new").mouseleave(function(){
+            $("#hr").hide()
+        })
+        $("#wom").mouseover(function(){
+            $("#hr1").show()
+        })
+        $("#wom").mouseleave(function(){
+            $("#hr1").hide()
+        })
+        $("#men").mouseover(function(){
+            $("#hr2").show()
+        })
+        $("#men").mouseleave(function(){
+            $("#hr2").hide()
+        })
+        $("#kid").mouseover(function(){
+            $("#hr3").show()
+        })
+        $("#kid").mouseleave(function(){
+            $("#hr3").hide()
+        })
+        $("#fen").mouseover(function(){
+            $("#hr4").show()
+        })
+        $("#fen").mouseleave(function(){
+            $("#hr4").hide()
+        })
+        $("#moto").mouseover(function(){
+            $("#hr5").show()
+        })
+        $("#moto").mouseleave(function(){
+            $("#hr5").hide()
+        })
+        $("#col").mouseover(function(){
+            $("#hr6").show()
+        })
+        $("#col").mouseleave(function(){
+            $("#hr6").hide()
+        })
+        $("#spo").mouseover(function(){
+            $("#hr7").show()
+        })
+        $("#spo").mouseleave(function(){
+            $("#hr7").hide()
+        })
+        $("#out").mouseover(function(){
+            $("#hr8").show()
+        })
+        $("#out").mouseleave(function(){
+            $("#hr8").hide()
+        })
+    })
+
+    $(function(){
+        $("#new").mouseover(function(){
+            $("#div2").slideDown()
+        })
+        $("#new").mouseleave(function(){
+            $("#div2").slideUp()
+        })
+    })
+
+    
+
+
+    $(function(){
+        
+        $("#wom").mouseover(function(){
+            $("#div3").slideDown()
+        })
+        $("#wom").mouseleave(function(){
+            $("#div3").slideUp()
+        })
+    })
+
+    $(function(){
+        $("#men").mouseover(function(){
+            $("#div4").slideDown()
+        })
+        $("#men").mouseleave(function(){
+            $("#div4").slideUp()
+        })
+    })
+
+    $(function(){
+        
+        $("#c1").mouseover(function(){
+            $("#c1t").show()
+        })
+        $(".slide").mouseleave(function(){
+            $("#c1t").hide()
+        })
+
+        $("#c2").mouseover(function(){
+            $("#c2t").show()
+        })
+        $(".slide").mouseleave(function(){
+            $("#c2t").hide()
+        })
+
+        $("#c3").mouseover(function(){
+            $("#c3t").show()
+        })
+        $(".slide").mouseleave(function(){
+            $("#c3t").hide()
+        })
+
+        $("#c4").mouseover(function(){
+            $("#c4t").show()
+        })
+        $(".slide").mouseleave(function(){
+            $("#c4t").hide()
+        })
+
+        $("#c5").mouseover(function(){
+            $("#c5t").show()
+        })
+        $(".slide").mouseleave(function(){
+            $("#c5t").hide()
+        })
+        
+    })
+ 
+</script>
+
+</html>

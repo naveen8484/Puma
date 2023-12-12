@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+    href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+<script src="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js
+"></script>
+<link href="
+https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css
+" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js">
+</script>
+
+</head>
+<style>
+body{
+  margin: 0%;
+  padding: 0%;
+  /* background-color: #ddd; */
+}
+nav{
+  position: sticky;
+  top: 0px;
+  background-color: black;
+  color: white;
+  z-index: 10;
+  width: 100%;
+  height: 100px;
+}
+#nd1{
+  width: 10%
+}
+#logo{
+  list-style-type: none;
+  margin-top: 5%;
+  margin-left: 75%;
+}
+#nu1{
+  font-size: 20px;
+  margin-top: 2%;
+  cursor: pointer;
+  width: 50%;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+#d{
+  display: flex;
+  width: 100%;
+}
+#in{
+  background-color: black;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  color: aliceblue;
+  border-color: aliceblue;
+  font-size: 20px;
+  margin-top: -2%;
+  width: 50%;
+  height: 40px;  
+}
+#nu2{
+  margin-top: 2%;
+  width: 30%;  
+  font-size: 20px; 
+}
+
+#nd2{
+  margin-left: 25%;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  margin-right: 20%;
+}
+#nd{
+  margin-top: 2%;
+  margin-left: 10%;
+}
+#newcon{
+  list-style-type: none;
+  font-size: 18px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+}
+#div2{
+  display: none;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  /* margin-top: 1%; */
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+}
+#div3{
+  display: none;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  /* margin-top: 1%; */
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+}
+#div4{
+  display: none;
+  cursor: pointer;
+  display: flex;
+  position: absolute;
+  left: 0%;
+  /* margin-top: 1%; */
+  width: 100%;
+  height: 450px;
+  background-color: whitesmoke;
+  color: rgb(49, 49, 49);
+}
+
+#newcon li{
+  margin-top: 5%;
+}
+#newcon li:hover{
+  color: rgb(138,115,80);
+  cursor: pointer;
+}
+.black li{
+  color: rgb(130, 128, 128);
+}
+.black strong li{
+  color: black;
+}
+#hr ,#hr1 ,#hr2 ,#hr3 ,#hr4 ,#hr5 ,#hr6 ,#hr7 ,#hr8{
+  position: absolute;
+  
+ display: none; 
+}
+#text{
+    background-color: red;
+    text-align: center;
+    margin-top: -20px;
+    width: 100%;
+    height: 150px;
+}
+#text h1 h5 h6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#text h6{
+    font-size: 12px;
+    text-decoration: underline;
+}
+#text2{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  display: flex;
+  margin-left: 9%;
+  
+  /* white-space: 20%; */
+  text-align: justify;
+}
+#text2 p{
+  margin-left: 30px;
+}
+#section3{
+  /* border: 1px solid black; */
+  width: 100%;
+  height: fit-content;
+  display: flex;
+}
+#section3-div1{
+  /* border: 1px solid black; */
+  width: 50%;
+  /* height: 1600px; */
+  margin-left: 10%;
+  position: relative;
+}
+#section3-div2{
+  /* background-color: #fff; */
+  /* border: 3px solid rgb(255, 6, 6); */
+  width: 30%;
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+}
+
+#img-div{
+  display: flex;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+#img-div #dd{
+  /* background-color: rgb(235, 235, 235); */
+  border-right: 5px rgb(244, 243, 243) solid;
+  border-bottom: rgb(244, 243, 243) 5px solid;
+}
+#right-title{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 25px;
+  margin-left: 2%;
+}
+#price{
+  font-family:'Times New Roman', Times, serif;
+  font-size: 25px;
+  margin-left: 2%;
+}
+#gst{
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkgray;
+  margin-top: -3%;
+  margin-left: 2%;
+}
+#color{
+  font-size: 25px;
+  margin-left: 2%;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#color-white{
+  font-size: 15px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: darkgray;
+  margin-top: -3%;
+  margin-left: 2%;
+}
+#img-sho{
+  margin-left: 2%;
+  border: 1px solid;
+}
+#size{
+  display: flex;
+}
+#size div{
+  border: 1px solid;
+  width: 40px;
+  padding: 2%;
+  height: 30px;
+  margin-left: 2%;
+}
+#size div:hover{
+    background-color: #000000;
+    color: white;
+}
+
+#buy{
+  margin-top: 2%;
+  background-color: black;
+  color: white;
+  width: 46%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 2% 2%;
+  border-radius: 20px;
+  margin-left: 1%;
+  text-align: center;
+  
+  /* text-decoration: none; */
+}
+#buy a{
+  text-decoration: none;
+  color: white;
+}
+#but{
+  
+  background-color: black;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 51%;
+  height: 45px;
+  margin-top: 5%;
+  border-radius: 20px;
+  margin-left: 1%;
+}
+#free{
+  margin-left: 1%;
+  font-size: 20px;
+  color: darkgray;
+}
+#pin{
+  margin-left: 1%;
+  font-size: 20px;
+}
+#pin-code{
+  display: flex;
+}
+#pin-code input{
+  width: 50%;
+  font-size: 20px;
+  margin-left: 1%;
+}
+#pin-code p{
+  margin-left: 2%;
+  background-color: black;
+  width: 70px;
+  padding: 2%;
+  text-align: center;
+  color: white;
+}
+#read{
+  text-decoration: underline;
+  margin-left: 2%;
+  font-size: 15px;
+}
+#section4{
+  margin-left: 10%;
+  margin-top: 3%;
+  width: 80%;
+  height: 520px;
+  background-color: #e3e0e0;
+}
+#section4 strong{
+  margin-left: 2%;
+  font-size: 20px;
+  margin-top: 3%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#section4 p{
+  font-size: 15px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-left: 3%;
+  margin-top: 2%;
+}
+#section4-div{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 3%;
+  font-size: 20px;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#section4-div li{
+  font-size: 15px;
+  margin-top: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#div7 p{
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#section5{
+  margin-left: 10%;
+  margin-top: 3%;
+  height: 300px;
+}
+#section5 h1{
+  margin-top: 5%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-left: 2%;
+}
+#section5 p{
+  margin-left: 2%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.uploadOuter {
+  text-align: center;
+  padding: 20px;
+  strong {
+    padding: 0 10px
+  }
+}
+.dragBox {
+  width: 250px;
+  height: 200px;
+  margin-top: -10%;
+  /* margin:  auto; */
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  line-height: 95px;
+  color: #999;
+  border: 2px dashed #ccc;
+  display: inline-block;
+  transition: transform 0.3s;
+  input[type="file"] {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    top: 0;
+    left: 0;
+  }
+}
+.draging {
+  transform: scale(1.1);
+}
+#preview {
+  text-align: center;
+  img {
+    max-width: 100%
+  }
+}
+
+#footer{
+  margin-top: 1%;
+  background-color: #000000;
+  width: 100%;
+  height: 550px;
+  color: #ffffff;
+  
+  
+  
+}
+#f1{
+  display: flex;
+  width: 100%;
+}
+#f1 ul{
+  justify-content: space-evenly;
+  margin-left: 10%;
+  margin-top: 5%;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#f1 ul li{
+  font-size: 20px;
+  color: #989595;
+  margin-top: 5%;
+}
+#f1 ul li:hover{
+  color: #ffffff;
+}
+#stay{
+  margin-top: 5%;
+  width: 20%;
+}
+#stay ul{
+  display: flex;
+}
+.last{
+  /* border: white 1px solid; */
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+#last1{
+  /* border: #ffffff solid 1px; */
+  display: flex;
+  width: 30%;
+  height: 30px;
+  margin-left: 10%;
+}
+#last1 img{
+  background-color: white;
+  width: 11%;
+  margin-left: 2%;
+}
+#last2{
+  border: #ffffff solid 2px;
+  width: 10%;
+  display: flex;
+  margin-left: -20%;
+  
+}
+#last2 img{
+  margin-left: 5%;
+}
+#last2 p{
+  margin-left: 15%;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#last3{
+  margin-left: -10%;
+  font-size: 10px;
+  margin-right: 10%;
+}
+
+</style>
+<body>
+    <nav id="nav1">
+        <div>
+            <div id="d">
+                <div id="nd1">
+                   <li id="logo"><img width="70px" height="70px"  src="img/10002-removebg-preview (2).png" alt="" width="10%"></li>
+               </div>
+                <ul id="nu1">
+                   <div id="new">
+                    <div><li >New</li>
+                    <hr id="hr" width="2%" color="#8A7350" >
+                    </div>
+                    <br>
+                    <div ><div id="div2">
+                        <div id="nd">
+                            <strong>
+                                <ul id="newcon">
+                                    <li>Lanuch Calender</li>
+                                    <li>Terrace</li>
+                                    <li>#PUMADrive</li>
+                                    <li>The Never Worn</li>
+                                    <li>PUMAxRIPNDIP</li>
+                                    <li>PUMAxRHUIGI</li>
+                                    <li>Anushka's Favorite Fits</li>
+                                    <li>PUMAxTHE SMURFS</li>
+                                    <li>Mancity 23/24 Kit</li>
+                                    <li>Nitra Collection</li>
+                                    <li>PUMA 75 YEARS</li>
+                                </ul>
+                            </strong>
+                        </div>
+                        <div id="nd">
+                            <ul class="black" id="newcon">
+                                <strong><li >SHOP BY GENDER</li></strong>
+                                <hr style="text-underline-position: auto;">
+                                <li>Men</li>
+                                <li>Women</li>
+                                <li>Kids&Teens</li>
+                             </ul>
+                        </div>
+                        <div id="nd">
+                            <ul class="black" id="newcon">
+                                <strong><li>CLASSICS</li></strong>
+                                <hr style="text-underline-position: auto;">
+                                <li>Shoes</li>
+                                <li>Clothing</li>
+                                <li>Accessories</li>
+                            </ul>
+                        </div>
+                        <div id="nd">
+                            <ul class="black" id="newcon">
+                                <strong><li>SNEAKER STORE</li></strong>
+                                <hr style="text-underline-position: auto;">
+                                <li>RS</li>
+                                <li>Cali</li>
+                                <li>MAyze</li>
+                                <li>Rider</li>
+                                <li>Slipstream</li>
+                                <li>Suede</li>
+                                <li>Palermo</li>
+                                <li>Clyde</li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+                   </div>
+                   <div id="wom">
+                    <div><li >Women</li>
+                        <hr id="hr1" width="3.5%" color="#8A7350" >
+                    </div>
+                    <br>
+                    <div>
+                        <div id="div3">
+                            <div id="nd">
+                                <strong>
+                                    <ul id="newcon">
+                                        <li style="color: red;">Sale</li>
+                                        <li>New & Trending</li>
+                                        <li>#PUMADrive</li>
+                                        <li>Softride</li>
+                                        <li>Terrace</li>
+                                        <li>Anushka's</li>
+                                        <li>Favorite Fits</li>
+                                        <li>Nitro Running</li>
+                                        <li>Curated by shanaya</li>
+                                        <li>Sports Bars</li>
+                                        <li>Maternity Clothing</li>
+                                        <li>Sustainable Collection</li>
+                                    </ul>
+                                </strong>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li >SHOES</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>Sneakers</li>
+                                    <li>Running</li>
+                                    <li>Walking</li>
+                                    <li>Training & Gym</li>
+                                    <li>Slip-ons & Ballerinas</li>
+                                    <li>Motorsport</li>
+                                    <li>Badminton</li>
+                                    <li>Softride</li>
+                                    <li>Nitro</li>
+                                 </ul>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li>Clothing</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>T-shirts & Tops</li>
+                                    <li>Polos</li>
+                                    <li>Sports Bars</li>
+                                    <li>JAckets</li>
+                                    <li>Sweatshirts & Hoodies</li>
+                                    <li>Shorts</li>
+                                    <li>Tights & Leggings</li>
+                                    <li>Pants</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <div id="men">
+                    <div><li >Men</li>
+                        <hr id="hr2" width="2%" color="#8A7350" >
+                    </div>
+                    <br>
+                    <div>
+                        <div id="div4">
+                            <div id="nd">
+                                <strong>
+                                    <ul id="newcon">
+                                        <li style="color: red;">Sale</li>
+                                        <li>New & Trending</li>
+                                        <li>#PUMADrive</li>
+                                        <li>Terrace</li>
+                                        <li>Nitro Running</li>
+                                        <li>Motorsport</li>
+                                        <li>Softride</li>
+                                        <li>Sustainable Collection</li>
+                                    </ul>
+                                </strong>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li >SHOES</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>Sneakers</li>
+                                    <li>Running</li>
+                                    <li>Walking</li>
+                                    <li>Training & Gym</li>
+                                    <li>Slip-ons & Ballerinas</li>
+                                    <li>Motorsport</li>
+                                    <li>Badminton</li>
+                                    <li>Softride</li>
+                                    <li>Nitro</li>
+                                 </ul>
+                            </div>
+                            <div id="nd">
+                                <ul class="black" id="newcon">
+                                    <strong><li>Clothing</li></strong>
+                                    <hr style="text-underline-position: auto;">
+                                    <li>T-shirts & Tops</li>
+                                    <li>Polos</li>
+                                    <li>Sports Bars</li>
+                                    <li>JAckets</li>
+                                    <li>Sweatshirts & Hoodies</li>
+                                    <li>Shorts</li>
+                                    <li>Tights & Leggings</li>
+                                    <li>Pants</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                   </div>
+                   <li id="kid">Kids
+                    <hr id="hr3" width="2%" color="#8A7350" >
+                   </li>
+                   <li id="fen">FENTYxPUMA
+                    <hr id="hr4" width="7%" color="#8A7350" >
+                   </li>
+                   <li id="moto">Motorsport
+                    <hr id="hr5" width="6%" color="#8A7350" >
+                   </li>
+                   <li id="col">Collaborations
+                    <hr id="hr6" width="7.5%" color="#8A7350" >
+                   </li>
+                   <li id="spo">Sports
+                    <hr id="hr7" width="3.5%" color="#8A7350" >
+                   </li>
+                   <li id="out">Outlet
+                    <hr id="hr8" width="3%" color="#8A7350" >
+                   </li>
+               </ul>
+               <ul id="nu2" >
+                   <div id="nd2">
+                       <input id="in"  type="text" placeholder="  Search.." name="search">
+                       <li><i class="fa fa-/heart-o" aria-hidden="true"></i></li>
+                       <li><i class="fa fa-shopping-cart" aria-hidden="true"></i></li>
+                       <li><i class="fa fa-user" aria-hidden="true"></i></li>
+                   </div>
+               </ul>
+           </div>
+        </div>
+    </nav>
+
+    <section id="text">
+        <h1>FLAT 40% OFF SELECT STYLES</h1>
+        <h5>END OF THE SEASON SALE l STARTS 8TH DEC</h5>
+        <h6>SHOP PREVIEW SALE NOW</h6>
+    </section>
+
+    <section id="text2">
+        <strong><p>Home . </p></strong>
+        <strong><p>New .</p></strong>
+        <p>PUMA</p>
+    </section>
+
+    
+
+    <section id="section3">
+
+        <div id="section3-div1">
+            <div id="img-div">
+                <div id="dd"><img   src="img/1.png" width="100%" alt=""></div>
+                <div id="dd"><img    src="img/2.png" width="100%"  alt=""></div>
+            </div>
+            <div id="img-div">
+                <div id="dd"><img    src="img/3.png" width="100%"  alt=""></div>
+                <div id="dd"><img    src="img/4.png" width="100%"  alt=""></div>
+            </div>
+            <div id="img-div">
+                <div id="dd"><img    src="img/5.png" width="100%"  alt=""></div>
+                <div id="dd"><img    src="img/6.png" width="100%"  alt=""></div>
+            </div>
+            <div id="img-div">
+                <div id="dd"><img    src="img/7.png" width="100%"  alt=""></div>
+                <div id="dd"><img    src="img/8.png" width="100%"  alt=""></div>
+            </div>
+            
+        </div>
+        <div id="section3-div2">
+        <div class="dv2">
+            <strong><p id="right-title">BMW M Motorsport Electron E Pro Unisex Sneakers</p></strong>
+            <h4 id="price">₹6,999</h4>
+            <h6 id="gst">Prices include GST</h6>
+            <h4 id="color">Color</h4>
+            <h6 id="color-white">PUMA White-Pro Blue</h6>
+            <img id="img-sho" src="img/1.png" width="10%" alt="">
+            <img src="img/ " alt="">
+            <hr size="1px" color="black">
+            <h5>Extra 5% off on prepaid orders</h5>
+            <div id="size">
+                <div>UK6</div>
+                <div>UK7</div>
+                <div>UK8</div>
+                <div>UK9</div>
+                <div>UK10</div>
+            </div>
+            <p>SIZE GUIDE</p>
+            <hr size="1" color="black">
+            <div id="buy">
+                        
+            <a  href="https://buy.stripe.com/test_14keWv8BbaN6d3O8ww">Buy Now</a>
+            </div>
+            <button id="but">ADD TO WISLIST</button>
+            <p id="free"><i class="fa fa-repeat" aria-hidden="true"></i> Free returns on all qualifying orders.</p>
+            <hr size="1" color="black">
+            <p id="pin">Please enter PIN code to check delivery time</p>
+            <p id="pin">PIN CODE</p>
+            <div id="pin-code">
+                <input type="text" placeholder="code">
+                <p>check</p>
+            </div>
+            <P id="color">Description</P>
+            <p id="pin">Meet the newest member of the Puma Rider family. The Blktop Rider features a rubber outsole inspired by PUMA's track and field archive</p>
+            <ul id="pin">
+                <li>Style: 393152_01
+                </li>
+                <li>Color: Inky Blue-Persian Blue</li>
+            </ul>
+            <strong><p id="read">Read More</p></strong>
+            <strong><p id="pin">Shipping and Returns</p></strong>
+            <p id="pin">Free return for all qualifying orders within 14 days of your order delivery date. Visit our Return Policy for more information.</p>
+        </div>
+    </div>
+    </section >
+
+    <section id="section4">
+        <strong>PRODUCT STORY</strong>
+        <p>Meet the newest member of the Puma Rider family. The Blktop Rider features a rubber outsole inspired by PUMA's track and field archive from the '80s. Heritage colours and materials meet modern design elements in this new classic silhouette. This version is decked out with a mesh base and some suede uppers for a smooth look.</p>
+        <div id="section4-div">
+            <div>DETAILS
+                <li>Mesh upper</li>
+                <li>Suede and synthetic overlays</li>
+                <li>Synthetic mudguard and heel underlay</li>
+                <li>TPU lace jewel</li>
+                <li>EVA midsole</li>
+                <li>Printed speckles on midsole</li>
+                <li>Studded rubber outsole with wrap-ups</li>
+            </div>
+            <div id="div7">Manufacturer's Address
+                <p>ALERON VIET NAM FOOTWEAR</p>
+                <p>LIMITED</p>
+                <p>FVNEC</p>
+                <p>THANH HOA PROVINCE</p>
+                <p>HOANG LONG INDUSTRIAL ZONE</p>
+                <p>TAO XUYEN WARD</p>
+                <p>- THANH HOA CITY</p>
+            </div>
+        </div>
+        <strong>Country Of Origin</strong>
+        <p>VN</p>
+    </section>
+    <section id="section5">
+        <div>
+            <div>
+                <h1>AS WORN BY YOU</h1>
+                <p>Mention us on Instagram @pumaindia</p>
+                <p>//ADD YOUR PHOTO//</p>
+            </div>
+            <div>
+                <div class="uploadOuter">
+                    
+                    <span id="preview" class="dragBox" >
+                      Darg and Drop image here
+                    <input type="file" onChange="dragNdrop(event)"  ondragover="drag()" ondrop="drop()" id="uploadFile"  />
+                      
+                    </span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div id="f1">
+            <ul>SUPPORT
+                <li>Contact us</li>
+                <li>Promotions & Sale</li>
+                <li>Track Order</li>
+                <li>Privacy Policy</li>
+                <li>Terms & Conditions</li>
+                <li>Cookie Settings</li>
+            </ul>
+            <ul>FAQs
+                <li>My Account</li>
+                <li>Return Policy</li>
+                <li>Tech Glossary</li>
+                <li>Initiate Return</li>
+            </ul>
+            <ul>ABOUT
+                <li>Company</li>
+                <li>Corporate News</li>
+                <li>Press Center</li>
+                <li>Investors</li>
+                <li>Sustainability</li>
+                <li>Careers</li>
+                <li>Store Finder</li>
+                <li>PUMA DNA</li>
+            </ul>
+        
+        <div id="stay">
+            <ul>STAY UP TO DATE</ul>
+            <ul>
+                
+                    <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-pinterest-p" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                    <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                
+                
+            </ul>
+        </div>
+    </div>
+
+    <hr size="2" width="80%" color="#989595">
+    <div class="last">
+        <div id="last1">
+            <img src="img/upi1.svg" alt="">
+            <img src="img/upi2.svg" alt="">
+            <img src="img/upi3.svg" alt="">
+            <img src="img/upi4.svg" alt="">
+        </div>
+        <div id="last2">
+            <img src="img/flag.svg" width="20%" alt="">
+            <p>INDIA</p>
+        </div>
+        <div id="last3">
+            <p>© PUMA INDIA LTD, 2023. ALL RIGHTS RESERVED. <br>
+                IMPRINT AND LEGAL DATA</p>
+        </div>
+    </div>
+    </section>
+
+
+
+</body>
+<script>
+    // wow script
+    new WOW().init();
+</script>
+<script>
+    "use strict";
+    function dragNdrop(event) {
+        var fileName = URL.createObjectURL(event.target.files[0]);
+        var preview = document.getElementById("preview");
+        var previewImg = document.createElement("img");
+        previewImg.setAttribute("src", fileName);
+        preview.innerHTML = "";
+        preview.appendChild(previewImg);
+    }
+    function drag() {
+        document.getElementById('uploadFile').parentNode.className = 'draging dragBox';
+    }
+    function drop() {
+        document.getElementById('uploadFile').parentNode.className = 'dragBox';
+    }
+</script>
+<script>
+    $(function(){
+        $("#new").mouseover(function(){
+            $("#hr").show()
+        })
+        $("#new").mouseleave(function(){
+            $("#hr").hide()
+        })
+        $("#wom").mouseover(function(){
+            $("#hr1").show()
+        })
+        $("#wom").mouseleave(function(){
+            $("#hr1").hide()
+        })
+        $("#men").mouseover(function(){
+            $("#hr2").show()
+        })
+        $("#men").mouseleave(function(){
+            $("#hr2").hide()
+        })
+        $("#kid").mouseover(function(){
+            $("#hr3").show()
+        })
+        $("#kid").mouseleave(function(){
+            $("#hr3").hide()
+        })
+        $("#fen").mouseover(function(){
+            $("#hr4").show()
+        })
+        $("#fen").mouseleave(function(){
+            $("#hr4").hide()
+        })
+        $("#moto").mouseover(function(){
+            $("#hr5").show()
+        })
+        $("#moto").mouseleave(function(){
+            $("#hr5").hide()
+        })
+        $("#col").mouseover(function(){
+            $("#hr6").show()
+        })
+        $("#col").mouseleave(function(){
+            $("#hr6").hide()
+        })
+        $("#spo").mouseover(function(){
+            $("#hr7").show()
+        })
+        $("#spo").mouseleave(function(){
+            $("#hr7").hide()
+        })
+        $("#out").mouseover(function(){
+            $("#hr8").show()
+        })
+        $("#out").mouseleave(function(){
+            $("#hr8").hide()
+        })
+    })
+
+
+    $(document).ready(function(){
+    var display =  $("#msform").css("display");
+        if(display!="none")
+        {
+            $("#div4").attr("style", "display:none");
+        }
+    var display =  $("#msform").css("display");
+        if(display!="none")
+        {
+            $("#div3").attr("style", "display:none");
+        }
+    var display =  $("#msform").css("display");
+        if(display!="none")
+        {
+            $("#div2").attr("style", "display:none");
+        }
+    });
+
+
+    $(function(){
+        $("#new").mouseover(function(){
+            $("#div2").slideDown()
+        })
+        $("#new").mouseleave(function(){
+            $("#div2").slideUp()
+        })
+    })
+
+    $(function(){
+        
+        $("#wom").mouseover(function(){
+            $("#div3").slideDown()
+        })
+        $("#wom").mouseleave(function(){
+            $("#div3").slideUp()
+        })
+    })
+
+    $(function(){
+        $("#men").mouseover(function(){
+            $("#div4").slideDown()
+        })
+        $("#men").mouseleave(function(){
+            $("#div4").slideUp()
+        })
+    })
+
+</script>
+
+</html>
